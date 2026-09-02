@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "openair-3-mcp-client-plugin-oss: IDE/agent client plugin for the openair-3-mcp server"
+abstract: >-
+  Client-side plugin (router skill, specialist skills, agent, MCP config)
+  that wires AI IDE/agent clients (Claude, Cursor, Codex, VS Code) to the
+  openair-3-mcp-server-oss server, enabling AI-driven air quality data
+  ingestion and openair charting from chat.
+authors:
+  - family-names: "Escribano"
+    given-names: "Miguel"
+    email: "miguel.escribano@gmail.com"
+repository-code: "https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss"
+url: "https://github.com/miguel-escribano/openair-ai-kit"
+version: "0.1.0"
+date-released: "2026-06-30"
+license: MIT
+keywords:
+  - air quality
+  - openair
+  - model context protocol
+  - MCP
+  - Claude
+  - Cursor
+references:
+  - type: software
+    title: "openair-3-mcp-server-oss"
+    authors:
+      - family-names: "Escribano"
+        given-names: "Miguel"
+    repository-code: "https://github.com/miguel-escribano/openair-3-mcp-server-oss"

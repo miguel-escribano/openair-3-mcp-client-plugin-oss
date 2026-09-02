@@ -114,6 +114,10 @@ Merge multiple MCP servers in `.mcp.json` — see [CONNECTORS.md](CONNECTORS.md)
 | [examples/local-excel-spain.md](examples/local-excel-spain.md) | [`regional-excel`](skills/workflows/regional-excel/SKILL.md) |
 | [examples/plot-catalog.md](examples/plot-catalog.md) | Plot picker — all MCP plot tools |
 
+## Reproductions
+
+Runnable scripts (no chat model needed) that reproduce a real, published openair analysis through this kit's MCP pipeline — proof you can run yourself, not a cherry-picked screenshot. Starts with the openair book's own Marylebone Road NOx polar plot example. See [reproductions/](reproductions/README.md).
+
 ## Testing (acceptance gate)
 
 This repo owns the **golden-path harness** — the authoritative check that deployed MCP produces correct plots.
@@ -201,6 +205,7 @@ skills/multi-mcp/          # Manual — json_exports bridge
 skills/workflows/          # Pattern recipes (regional Excel, network, upload)
 agents/openair-agent.md          # Guardrails O1–O6, analyst contract, routing
 examples/                  # Copy-paste walkthroughs (start with vscode-chat-felisa.md for remote MCP)
+reproductions/             # Runnable scripts reproducing published openair analyses via MCP
 tests/                     # Acceptance harness + felisa_munarriz.json
 .mcp.json.example          # Client config template (safe to commit)
 CONNECTORS.md              # Server + optional MCP pairing

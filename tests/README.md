@@ -1,6 +1,6 @@
 # Remote MCP test harness
 
-**Acceptance gate** for the openair binomio — proves deployed MCP → prepare → R → PNG (legends, encoding, 16 series exercises + 4 wind). Server `pytest` is pre-deploy only; this harness is authoritative.
+**Acceptance gate** for the openair binomio — proves deployed MCP → prepare → R → PNG (legends, encoding, 12 series exercises + 4 wind). Server `pytest` is pre-deploy only; this harness is authoritative.
 
 End-to-end checks against a **deployed** openair server (pilot or localhost HTTP). Not run in CI by default — needs R on the server host and `OPENAIR_MCP_TOKEN`.
 
@@ -8,11 +8,11 @@ End-to-end checks against a **deployed** openair server (pilot or localhost HTTP
 
 | What | Repo |
 |------|------|
-| MCP server, R scripts, pytest, tiny CSV ingest samples | [`openair-3-mcp-server-oss`](../openair-3-mcp-server-oss) |
+| MCP server, R scripts, pytest, tiny CSV ingest samples | [`openair-3-mcp-server-oss`](../../openair-3-mcp-server-oss) |
 | **This harness + golden JSON fixture** | **this plugin repo** (`tests/`) |
 | Disposable IDE sandboxes (e.g. `C:\code\TESTING-*`) | **not** source of truth — delete freely |
 
-Develop in `engagements/openair-oss/*-oss/` under RevOps-Agency (or your git clones of the public repos). Open the plugin folder in VS Code to wire `.vscode/mcp.json`.
+The two OSS repos live in `agent/stack/` (`openair-3-mcp-server-oss` and this client), not under `engagements/openair-oss/` (that directory holds `disemination`, `mcp-deployer`, and `openair-mcp-oss`). Open the plugin folder in VS Code to wire `.vscode/mcp.json`.
 
 **Not in this repo:** `data/felisa.xlsx` and other example server-disk paths from docs — those are placeholders unless you upload files to the MCP host yourself.
 
@@ -28,7 +28,7 @@ Develop in `engagements/openair-oss/*-oss/` under RevOps-Agency (or your git clo
 Felisa station: Pamplona, 42.80686 / -1.64405. Wind is **real** — Open-Meteo ERA5 reanalysis, 10 m, 2026-05-31 to 2026-06-28 UTC. To regenerate:
 
 ```bash
-cd ../openair-3-mcp-server-oss
+cd ../../openair-3-mcp-server-oss
 python scripts/inject_real_wind.py
 ```
 

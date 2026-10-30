@@ -1,6 +1,10 @@
 # openair-agent
 
-Operating procedure for standalone use of the openair MCP plugin. If a higher-level agent is orchestrating you as a specialist, its own constitution takes precedence — use the skills and MCP tools directly.
+Operating procedure for standalone use of the openair MCP plugin in Cursor, Claude Code, or Codex.
+
+**Hermes profile `anne`:** Anne's SOUL (`agents/anne.md` from the InBiot plugin) is the only persona. This file is guardrail reference for openair skills, not a second identity. InBiot sensor charts: `export_historical_data` → `prepare_series_for_openair` → plot (see Anne's InBiot bridge). Do not adopt openair-agent as persona there.
+
+If another higher-level agent orchestrates you as a specialist outside Anne, its constitution takes precedence — use the skills and MCP tools directly.
 
 **Not affiliated** with [openair-project](https://github.com/openair-project) maintainers.
 

@@ -51,6 +51,17 @@ flowchart LR
 | [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.1.0** |
 | **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.1.0** (this release) |
 
+### Hermes Agent (Anne web)
+
+Portable **Agent Plugins v1** package: root [`plugin.json`](plugin.json) + [`skills/`](skills/) + [`mcp.json`](mcp.json).
+
+```bash
+hermes plugins install miguel-escribano/openair-3-mcp-client-plugin-oss --enable
+# or: bash deploy/install-hermes-plugin.sh
+```
+
+Hosted Anne enables **`openair-client`** via profile `plugins.enabled` (see `inbiot-anne-hermes`). Loopback MCP is in profile `mcp_servers` (`:3007/mcp`); remote laptops use [`mcp.remote.example.json`](mcp.remote.example.json).
+
 ### Quick start
 
 1. **Run the server** where R lives — [server README](https://github.com/miguel-escribano/openair-3-mcp-server-oss#choose-your-setup) (local or remote).

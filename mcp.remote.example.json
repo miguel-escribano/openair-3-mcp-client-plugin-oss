@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "openair-3-mcp-server-oss": {
+      "type": "streamable-http",
+      "url": "https://mcp.miguel-escribano.com/openair-3-mcp-server-oss/mcp",
+      "headers": {
+        "X-MCP-Token": "${MCP_INBIOT_AUTH_TOKEN}"
+      }
+    }
+  }
+}

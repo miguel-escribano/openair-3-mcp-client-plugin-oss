@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openair-client",
+  "version": "0.1.0",
+  "description": "openair MCP client — ingest, prepare-plot, and workflow skills. Pairs with openair-3-mcp-server-oss.",
+  "author": {
+    "name": "Miguel Escribano"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/miguel-escribano/openair-3-mcp-client-plugin-oss",
+  "keywords": ["openair", "air-quality", "mcp", "plotting"]
+}

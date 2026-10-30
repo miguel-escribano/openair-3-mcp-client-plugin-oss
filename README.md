@@ -60,7 +60,7 @@ hermes plugins install miguel-escribano/openair-3-mcp-client-plugin-oss --enable
 # or: bash deploy/install-hermes-plugin.sh
 ```
 
-Hosted Anne enables **`openair-client`** via profile `plugins.enabled` (see `inbiot-anne-hermes`). Loopback MCP is in profile `mcp_servers` (`:3007/mcp`); remote laptops use [`mcp.remote.example.json`](mcp.remote.example.json).
+Hosted Anne enables **`openair-client`** via profile `plugins.enabled` (see [inbiot-anne-hermes/RUNTIME.md](../inbiot-anne-hermes/RUNTIME.md)). Loopback MCP is in profile `mcp_servers` (`:3007/mcp`); remote laptops use [`mcp.remote.example.json`](mcp.remote.example.json). Do **not** adopt **`openair-agent.md`** as persona on the hosted profile — Anne interprets plots under her guardrails.
 
 ### Quick start
 

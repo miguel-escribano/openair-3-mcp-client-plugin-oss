@@ -6,6 +6,12 @@ This repo is versioned together with [openair-3-mcp-server-oss](https://github.c
 
 ## [Unreleased]
 
+## [0.2.5] - 2026-11-20
+
+### Changed
+
+- Pairs with server **v0.2.5** (`time_variation` drops monthly panel when span under 60 days).
+
 ## [0.2.4] - 2026-11-20
 
 ### Changed

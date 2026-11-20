@@ -6,6 +6,12 @@ This repo is versioned together with [openair-3-mcp-server-oss](https://github.c
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-20
+
+### Changed
+
+- Pairs with server **v0.2.1**: `dist_plot`, openair 3.2 `import_meta` filters, optional `plot_options.theme` on prepare → plot chain.
+
 ## [0.2.0] - 2026-11-20
 
 ### Changed

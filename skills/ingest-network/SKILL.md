@@ -23,9 +23,9 @@ Read `../../agents/openair-agent.md` for guardrails and the analyst contract.
    - UK AURN → `import_aurn`
    - UK wider → `import_ukaq`
    - Europe → `import_europe`
-   - Metadata / site lookup → `import_meta`
+   - Metadata / site lookup → `import_meta` (no dates required; supports `code`, `site`, `site_type`, `meta_pollutant`, `year`, `lat`/`lng`, `max_dist`, `max_n`, `all_meta` — see server `ImportParamsV1`)
 
-2. Pass site code, pollutant, and date range per tool schema. **Do not shrink the user's date range** without asking.
+2. Pass site code, pollutant, and date range per import tool schema (`import_meta` is metadata-only). **Do not shrink the user's date range** without asking.
 
 3. For plotting: [`prepare-plot`](../prepare-plot/SKILL.md) — `prepare_series_for_openair` → one plot tool.
 

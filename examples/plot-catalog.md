@@ -23,6 +23,7 @@ Always chain: **ingest → `prepare_series_for_openair` → one plot tool** (exc
 |-----------|----------|-------|
 | X vs Y scatter | `scatter_plot` | ≥2 series; first = x, second = y |
 | Correlation matrix | `cor_plot` | ≥2 pollutants |
+| Distribution (histogram / density) | `dist_plot` | `plot_options.theme` / `dist_method` (openair 3.2) |
 | Summary numbers | `aq_stats` | Mean, percentiles, capture % |
 | Model vs obs stats | `mod_stats` | ≥2 series; first = model, second = observed |
 | Predicted vs observed quantiles | `conditional_quantile` | Model evaluation plot |

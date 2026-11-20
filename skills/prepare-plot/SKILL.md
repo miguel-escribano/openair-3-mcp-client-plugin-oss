@@ -30,6 +30,8 @@ If data is not loaded yet, route to [`ingest-local`](../ingest-local/SKILL.md), 
 
 2. Call **exactly one** plot tool after prepare.
 
+   Optional **openair 3.2 themes**: set `plot_options.theme` (or `meta.theme`) on the SeriesV1 you pass to the plot tool — presets `default`, `dark`, `modern`, `soft`, `print`. Survives `prepare_series_for_openair` when you chain prepare output → plot.
+
 3. Summarise the PNG — range, timezone, main pattern. Describe visible patterns (trends, peaks, coverage gaps) — see the Describe phase in openair-agent.md.
 
 ## Wind / polar exception
@@ -77,6 +79,7 @@ Do not pass mangled internal column names to the user — describe pollutants in
 | Calendar / daily pattern | `calendar_plot` |
 | Diurnal / weekday | `time_variation` |
 | Correlation matrix | `cor_plot` (≥2 series in prepare) |
+| Value distribution | `dist_plot` | Optional `plot_options.dist_method`: histogram, density, freqpoly, ecdf |
 | Model vs observation numbers | `mod_stats` (model series first, obs second) |
 | Polar / wind | `polar_plot`, `wind_rose` (WindSeriesV1 with ws/wd — no prepare) |
 

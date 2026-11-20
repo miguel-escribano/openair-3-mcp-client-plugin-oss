@@ -6,6 +6,12 @@ This repo is versioned together with [openair-3-mcp-server-oss](https://github.c
 
 ## [Unreleased]
 
+## [0.2.6] - 2026-11-20
+
+### Changed
+
+- Pairs with server **v0.2.6** (`time_variation` display labels + title fix; `plot_options.theme` validation; optional `plot_options.dendrogram` for `cor_plot`).
+
 ## [0.2.5] - 2026-11-20
 
 ### Changed

@@ -48,8 +48,8 @@ flowchart LR
 
 | Repo | Role | Min version |
 |------|------|-------------|
-| [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.2.0** |
-| **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.2.0** (this release) |
+| [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.2.3** (MCP host) |
+| **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.2.2** (this release) |
 
 ### Hermes Agent (Anne web)
 
@@ -61,6 +61,8 @@ hermes plugins install miguel-escribano/openair-3-mcp-client-plugin-oss --enable
 ```
 
 Hosted Anne enables **`openair-client`** via profile `plugins.enabled` (see [inbiot-anne-hermes/RUNTIME.md](../inbiot-anne-hermes/RUNTIME.md)). Loopback MCP is in profile `mcp_servers` (`:3007/mcp`); remote laptops use [`mcp.remote.example.json`](mcp.remote.example.json). Do **not** adopt **`openair-agent.md`** as persona on the hosted profile — Anne interprets plots under her guardrails.
+
+**Linode:** push to `main` of this repo triggers **anne-app-deployer** (skills + Hermes sync). MCP server deploy is the **server** repo via **mcp-deployer** — see [deploy/LINODE.md](deploy/LINODE.md).
 
 ### Quick start
 

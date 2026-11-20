@@ -6,6 +6,12 @@ This repo is versioned together with [openair-3-mcp-server-oss](https://github.c
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-11-20
+
+### Changed
+
+- Document Linode Anne auto-deploy (`deploy/LINODE.md`). Pair with server **≥ v0.2.3** on the MCP host (Anne uses loopback `:3007`; skills unchanged vs 0.2.1 except deploy docs).
+
 ## [0.2.1] - 2026-11-20
 
 ### Changed

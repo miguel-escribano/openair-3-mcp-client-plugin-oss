@@ -48,8 +48,8 @@ flowchart LR
 
 | Repo | Role | Min version |
 |------|------|-------------|
-| [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.1.0** |
-| **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.1.0** (this release) |
+| [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.2.0** |
+| **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.2.0** (this release) |
 
 ### Hermes Agent (Anne web)
 
@@ -243,7 +243,9 @@ This binomio provides **charts and data access** through MCP, powered by openair
 
 For methodology, see the [openair book](https://openair-project.github.io/book/). Teams that pair generative AI with air-quality data often add a **controlled knowledge base** for narrative beyond plots; that layer is separate from this chart stack.
 
-**Release v0.1.0** — initial public release: `openair-agent` persona (`agents/openair-agent.md`), ingest/prepare/plot skills, workflow recipes, multi-MCP bridge, Felisa WindSeriesV1 fixture + **15-tool acceptance harness** (`tests/`). Pair with the server at the **same release**. [Issues](https://github.com/miguel-escribano/openair-3-mcp-server-oss/issues) and feedback welcome.
+**Release v0.2.0** — pairs with [openair 3.2.0](https://cran.r-project.org/package=openair) on the MCP server host (CRAN 2026-11-19). No new MCP tools; server `health_r` and docs require **openair ≥ 3.2.0**, **legendry ≥ 0.3.0**. Re-run the Felisa harness after upgrading R on your server.
+
+**Release v0.1.0** — initial public release: skills, harness, multi-MCP bridge. [Issues](https://github.com/miguel-escribano/openair-3-mcp-server-oss/issues) welcome.
 
 ## Third-party and attribution
 

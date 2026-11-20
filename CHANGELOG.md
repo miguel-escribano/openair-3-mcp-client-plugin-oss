@@ -6,11 +6,17 @@ This repo is versioned together with [openair-3-mcp-server-oss](https://github.c
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-20
+
+### Changed
+
+- Release pairs with server **v0.2.0** and **CRAN openair 3.2.0** on the MCP host. Re-run `tests/run_series_exercises.py` after server R upgrade.
+
 ### Added
 
 - `CITATION.cff` — machine-readable citation metadata (GitHub "Cite this repository").
 - `CONTRIBUTING.md` — dev setup, skill-adding guide, testing gate, PR process.
-- `reproductions/` — runnable, no-chat-model reproduction of the openair book's Marylebone Road NOx polar plot example (live AURN NOx + Open-Meteo ERA5 wind, since site `MY1` reports no wind of its own). Verified live against the deployed server; reference output committed.
+- `reproductions/` — Marylebone Road NOx polar plot reproduction (AURN + ERA5 wind).
 
 ## [0.1.0] - 2026-06-30
 

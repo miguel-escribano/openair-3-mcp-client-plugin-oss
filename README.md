@@ -48,8 +48,8 @@ flowchart LR
 
 | Repo | Role | Min version |
 |------|------|-------------|
-| [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.2.3** (MCP host) |
-| **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.2.2** (this release) |
+| [openair-3-mcp-server-oss](https://github.com/miguel-escribano/openair-3-mcp-server-oss) | **Server** — MCP + R (local or remote host) | **v0.2.4** (MCP host) |
+| **openair-3-mcp-client-plugin-oss** (this repo) | **Client plugin** — skills, agent, IDE install | **v0.2.4** (this release) |
 
 ### Hermes Agent (Anne web)
 

@@ -6,6 +6,12 @@ This repo is versioned together with [openair-3-mcp-server-oss](https://github.c
 
 ## [Unreleased]
 
+## [0.2.4] - 2026-11-20
+
+### Changed
+
+- Release pairs with server **v0.2.4** (`time_plot` ylab + display `name.pol` from series units). Skills unchanged; require MCP host **≥ v0.2.4** for labelled Y axes on `time_plot`.
+
 ## [0.2.2] - 2026-11-20
 
 ### Changed
